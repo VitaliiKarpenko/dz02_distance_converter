@@ -11,9 +11,17 @@ public class Main {
         System.out.print("Convert miles to kilometers. Enter miles: ");
         double miles = scanner.nextDouble();
         System.out.println(miles + " miles is " + milesToKm(miles) + " kilometers.");
+
+        System.out.print("Convert kilometers to miles. Enter kilometers: ");
+        double km = scanner.nextDouble();
+        System.out.println(km + " kilometers is " + kmToMiles(km) + " miles.");
     }
 
     private static double milesToKm(double miles) {
         return miles * KM_PER_MILE;
+    }
+
+    private static double kmToMiles(double km) {
+        return km / KM_PER_MILE;
     }
 }
